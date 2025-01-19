@@ -1,0 +1,21 @@
+{
+  "NotFoundPage": {
+    "title": "Page not found"
+  },
+  "Navigation": {
+    "home": "Home",
+    "aboutUs": "About Us"
+  },
+  "Cta":{
+    "backToHome":"Back to Home"
+  },
+  "Footer":{
+    "title":"This is footer"
+  },
+  "HomePage": {
+    "title": "This is home page"
+  },
+  "AboutUsPage": {
+    "title": "This is about us page"
+  }
+}

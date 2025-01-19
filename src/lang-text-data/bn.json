@@ -1,0 +1,21 @@
+{
+  "NotFoundPage": {
+    "title": "খুঁজে পাওয়া যায়নি"
+  },
+  "Navigation": {
+    "home": "হোম",
+    "aboutUs": "আমাদের সম্পর্কে"
+  },
+  "Cta":{
+    "backToHome":"হোম পেইজে ফিরে যান"
+  },
+  "Footer":{
+    "title":"এটি ফুটার"
+  },
+  "HomePage": {
+    "title": "এটি হোম পেইজ "
+  },
+  "AboutUsPage": {
+    "title": "আমাদের সম্পর্কে জানুন"
+  }
+}
