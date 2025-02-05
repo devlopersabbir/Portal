@@ -1,18 +1,17 @@
 import type { Metadata } from 'next';
 import { Plus_Jakarta_Sans, Prompt } from 'next/font/google';
-
 import axios from 'axios';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import 'swiper/css';
+
+import 'swiper/swiper-bundle.css'
 import 'swiper/css/pagination';
 
+// import 'swiper/swiper.min.css';
+// import 'swiper/css/pagination';
 import { config } from '@/config/config';
-
 import { cn } from '@/lib/utils/cn';
-
 import { PageLoader } from '@/components/atom/page-loader';
-
 import '@/app/globals.css';
 
 const plusJakartaSans = Plus_Jakarta_Sans({
