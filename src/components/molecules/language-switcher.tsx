@@ -1,13 +1,9 @@
 'use client';
 
 import { useTransition } from 'react';
-
 import { useParams } from 'next/navigation';
-
 import { useLocale } from 'next-intl';
-
 import { LocalEnums, usePathname, useRouter } from '@/config/navigation';
-
 import { cn } from '@/lib/utils/cn';
 
 export function useLanguageSwitcher() {
@@ -42,13 +38,19 @@ export function LanguageSwitcher() {
   const pathname = usePathname();
   const params = useParams();
 
-  console.log("params", params.locale);
 
   function handleChange(lang: LocalEnums) {
+    // Check if the current locale is already the selected one to avoiding duplication
+    if (params.locale === lang) return;
+
+    // Update the URL with the new language, avoiding duplication
     startTransition(() => {
+      // Check if the current pathname already has the locale in it
+      const newPathname = pathname.replace(`/${params.locale}`, '');
+      
       router.replace(
         // @ts-expect-error -- TypeScript will validate that only known `params`
-        { pathname, params },
+        { pathname: lang, params },
         { locale: lang }
       );
     });
